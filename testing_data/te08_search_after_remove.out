@@ -1,0 +1,36 @@
+
+===== SMART PARKING SYSTEM =====
+1. Show Parking Slots
+2. Park Vehicle
+3. Remove Vehicle
+4. Search Vehicle
+5. Exit
+Enter your choice: 
+Enter vehicle number: Enter owner name: Vehicle parked in Slot 1!
+
+===== SMART PARKING SYSTEM =====
+1. Show Parking Slots
+2. Park Vehicle
+3. Remove Vehicle
+4. Search Vehicle
+5. Exit
+Enter your choice: 
+Enter vehicle number: Enter parking time in hours: Parking Charge = Rs. 40
+Vehicle removed!
+
+===== SMART PARKING SYSTEM =====
+1. Show Parking Slots
+2. Park Vehicle
+3. Remove Vehicle
+4. Search Vehicle
+5. Exit
+Enter your choice: 
+Enter vehicle number: Vehicle not found!
+
+===== SMART PARKING SYSTEM =====
+1. Show Parking Slots
+2. Park Vehicle
+3. Remove Vehicle
+4. Search Vehicle
+5. Exit
+Enter your choice: Thank you!

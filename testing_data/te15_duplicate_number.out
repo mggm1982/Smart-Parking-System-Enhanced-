@@ -1,0 +1,45 @@
+
+===== SMART PARKING SYSTEM =====
+1. Show Parking Slots
+2. Park Vehicle
+3. Remove Vehicle
+4. Search Vehicle
+5. Exit
+Enter your choice: 
+Enter vehicle number: Enter owner name: Vehicle parked in Slot 1!
+
+===== SMART PARKING SYSTEM =====
+1. Show Parking Slots
+2. Park Vehicle
+3. Remove Vehicle
+4. Search Vehicle
+5. Exit
+Enter your choice: 
+Enter vehicle number: Enter owner name: Vehicle parked in Slot 2!
+
+===== SMART PARKING SYSTEM =====
+1. Show Parking Slots
+2. Park Vehicle
+3. Remove Vehicle
+4. Search Vehicle
+5. Exit
+Enter your choice: 
+--- Parking Slots ---
+Slot 1: Occupied
+Slot 2: Occupied
+Slot 3: Empty
+Slot 4: Empty
+Slot 5: Empty
+Slot 6: Empty
+Slot 7: Empty
+Slot 8: Empty
+Slot 9: Empty
+Slot 10: Empty
+
+===== SMART PARKING SYSTEM =====
+1. Show Parking Slots
+2. Park Vehicle
+3. Remove Vehicle
+4. Search Vehicle
+5. Exit
+Enter your choice: Thank you!

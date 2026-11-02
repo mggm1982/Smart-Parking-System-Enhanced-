@@ -1,0 +1,27 @@
+set,case,description,correct behaviour (expected text),result on current code
+training_data,tr01_show_empty,Display all slots on an empty lot,Slot 1: Empty; Slot 10: Empty,PASS
+training_data,tr02_park_one,Park one vehicle then show slots,Vehicle parked in Slot 1!; Slot 1: Occupied,PASS
+training_data,tr03_park_three,"Park three vehicles, show slots",Slot 3!; Slot 3: Occupied; Slot 4: Empty,PASS
+training_data,tr04_search_found,Search a parked vehicle,Vehicle found!; Ravi,PASS
+training_data,tr05_search_not_found,Search a vehicle that was never parked,Vehicle not found!,PASS
+training_data,tr06_remove_3h,Remove after 3 hours (Rs. 60),Rs. 60; Vehicle removed!,PASS
+training_data,tr07_remove_1h,Remove after 1 hour (Rs. 20),Rs. 20,PASS
+training_data,tr08_slot_reuse,Freed slot is reused first,Slot 1!,PASS
+training_data,tr09_fill_ten,Park ten vehicles then show slots,Slot 10!; Slot 10: Occupied | must not contain: Slot 1: Empty,PASS
+training_data,tr10_full_session,"Park, search, show, remove, show",Vehicle found!; Rs. 60,PASS
+testing_data,te01_full_lot,11th vehicle on a full lot,Parking is full!,PASS
+testing_data,te02_choice_9,Menu choice outside range (9),Invalid choice!,PASS
+testing_data,te03_choice_0,Menu choice 0,Invalid choice!,PASS
+testing_data,te04_choice_negative,Menu choice -1,Invalid choice!,PASS
+testing_data,te05_choice_text,Menu input is text (abc),Invalid input!,PASS
+testing_data,te06_text_then_valid,Text then a valid option; menu recovers,Invalid input!; Slot 1: Empty,PASS
+testing_data,te07_remove_missing,Remove a vehicle that is not parked,Vehicle not found! | must not contain: Enter parking time,PASS
+testing_data,te08_search_after_remove,Search a vehicle after it was removed,Vehicle not found!,PASS
+testing_data,te09_remove_twice,Remove the same vehicle twice,Vehicle removed!; Vehicle not found!,PASS
+testing_data,te10_case_sensitive,Search with different letter case,Vehicle not found!,PASS
+testing_data,te11_large_hours,Remove after 100 hours (Rs. 2000),Rs. 2000,PASS
+testing_data,te12_zero_hours,Remove after 0 hours is rejected,Invalid hours,KNOWN BUG
+testing_data,te13_negative_hours,Negative hours must be rejected,Invalid hours; Vehicle found! | must not contain: Rs. -40,KNOWN BUG
+testing_data,te14_letters_as_hours,Letters as hours must not free the vehicle,Invalid hours; Vehicle found! | must not contain: Rs. 0,KNOWN BUG
+testing_data,te15_duplicate_number,Duplicate vehicle number should be refused,already,KNOWN BUG
+testing_data,te16_two_word_owner,Two-word owner name should be accepted,Slot 1: Occupied | must not contain: Invalid input!,KNOWN BUG
